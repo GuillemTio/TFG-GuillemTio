@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tfg_guillem_unreal\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\tfg_guillem_unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tfg_guillem_unreal\\definitions.tfg_guillem_unreal.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

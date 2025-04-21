@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TFG_Guillem_Unreal.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TFG_Guillem_Unreal.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TFG_Guillem_UnrealEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TFG_Guillem_Unreal">
+      <UniqueIdentifier>{D1BFA825-E2DA-3A9A-9CCD-F84A7D7A5FBE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TFG_Guillem_Unreal\TFG_Guillem_Unreal.Build.cs">
+      <Filter>Source\TFG_Guillem_Unreal</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\TFG_Guillem_Unreal.cpp">
+      <Filter>Source\TFG_Guillem_Unreal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\TFG_Guillem_Unreal.h">
+      <Filter>Source\TFG_Guillem_Unreal</Filter>
+    </ClCompile>
+    <Filter Include="Source\TFG_Guillem_Unreal\Private">
+      <UniqueIdentifier>{3EB113BF-D148-3ED7-97CC-DF869E89D118}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ActivableActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\AttachableActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\BalloonActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\BowlActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ClawsActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\Connector.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ConnectorUserData.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\CrossActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\InputConnector.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\NonActivableActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\OutputConnector.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\PlatformActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ProvaVehicle.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ProvaVehicle.h">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\SpringActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ThrusterActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\WheelActor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\TFG_Guillem_Unreal\Public">
+      <UniqueIdentifier>{8D079360-D8C6-33BE-908A-C1B1FEC1B42F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\ActivableActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\AttachableActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\BalloonActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\BowlActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\ClawsActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\Connector.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\ConnectorUserData.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\CrossActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\InputConnector.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\NonActivableActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\OutputConnector.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\PlatformActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\SpringActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\ThrusterActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\WheelActor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

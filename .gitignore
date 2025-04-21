@@ -76,3 +76,8 @@ DerivedDataCache/*
 # Large Assets
 Content/ModularHouses/
 Content/Fab/
+/TFG_Guillem_Unreal/Content/ModularHouses
+/TFG_Guillem_Unreal/Saved/Autosaves
+/TFG_Guillem_Unreal/Content/Fab
+*.fbx
+*.umap

@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\private\\actorplataforma.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\tfg_guillem_unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpplatest.h.pch",
+        "Includes": [
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tfg_guillem_unreal\\definitions.tfg_guillem_unreal.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\actorplataforma.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\nonactivableactor.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\attachableactor.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\tfg_guillem_unreal\\uht\\attachableactor.generated.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\tfg_guillem_unreal\\uht\\nonactivableactor.generated.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\tfg_guillem_unreal\\uht\\actorplataforma.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

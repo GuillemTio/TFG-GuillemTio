@@ -1,0 +1,46 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include <PhysicsEngine/PhysicsConstraintComponent.h> // segurament necessiti incluir Connector 
+#include "AttachableActor.generated.h"
+
+class UConnector;
+
+UCLASS(Abstract)
+class TFG_GUILLEM_UNREAL_API AAttachableActor : public AActor
+{
+	GENERATED_BODY()
+	
+	
+public:	
+	AAttachableActor();
+	float mass;
+
+protected:
+	UStaticMeshComponent* actorMesh;
+	TArray<UConnector*> connectors;
+
+private:
+	float ejectionPower = 100;
+
+
+public:	
+	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION(BlueprintCallable)
+	void SetPhysicsSimulation(bool isActive);
+
+	void EjectionImpulse(FVector direction);
+
+	virtual void SetConstraintLimits(UPhysicsConstraintComponent& constraint) PURE_VIRTUAL(AAttachableActor::SetConstraint, );
+
+	//UFUNCTION(BlueprintCallable) DEPRECATED WITH NEW SYSTEM
+	//virtual void Connect(UConnector* passedConnector, FVector toAttachLocation) PURE_VIRTUAL(AAttachableActor::Connect, );
+
+protected:
+	virtual void BeginPlay() override;
+
+};

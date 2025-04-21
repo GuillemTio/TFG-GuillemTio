@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\Guillem\\Desktop\\UNI\\Treball de Fi de Grau\\TFG-GuillemTio\\TFG-GuillemTio\\TFG_Guillem_Unreal\\Source\\TFG_Guillem_Unreal\\TFG_Guillem_Unreal.Build.cs",
+		"C:\\Users\\Guillem\\Desktop\\UNI\\Treball de Fi de Grau\\TFG-GuillemTio\\TFG-GuillemTio\\TFG_Guillem_Unreal\\Source\\TFG_Guillem_Unreal.Target.cs",
+		"C:\\Users\\Guillem\\Desktop\\UNI\\Treball de Fi de Grau\\TFG-GuillemTio\\TFG-GuillemTio\\TFG_Guillem_Unreal\\Source\\TFG_Guillem_UnrealEditor.Target.cs"
+	],
+	"EngineVersion": "5.5.1"
+}
