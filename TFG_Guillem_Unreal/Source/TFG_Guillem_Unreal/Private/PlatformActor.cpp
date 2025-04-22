@@ -2,8 +2,6 @@
 
 
 #include "PlatformActor.h"
-#include "WheelActor.h"
-#include "ThrusterActor.h"
 #include "OutputConnector.h"
 #include <Kismet/GameplayStatics.h>
 #include "Engine/StaticMeshSocket.h"
@@ -66,9 +64,5 @@ void APlatformActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint
 	constraint.SetAngularTwistLimit(ACM_Locked, 0.0f);
 }
 
-//void APlatformActor::Connect(UConnector* otherConnector, FVector toAttachLocation)
-//{
-//	Connectors[currentConnector]->AttachTo(otherConnector, toAttachLocation);
-//}
 
 

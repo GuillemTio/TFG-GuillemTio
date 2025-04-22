@@ -16,7 +16,7 @@ class TFG_GUILLEM_UNREAL_API ABalloonActor : public AActivableActor
 
 private:
 	bool isBalloonForceActive = false;
-	float balloonForce = 120000;
+	float balloonForce = 85000;
 
 public:
 	ABalloonActor();

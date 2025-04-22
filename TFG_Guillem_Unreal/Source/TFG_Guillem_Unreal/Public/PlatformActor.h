@@ -19,7 +19,6 @@ public:
 public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetConstraintLimits(UPhysicsConstraintComponent& constraint) override;
-	//virtual void Connect(UConnector* passedConnector, FVector toAttachLocation) override;
 
 protected:
 	virtual void BeginPlay() override;

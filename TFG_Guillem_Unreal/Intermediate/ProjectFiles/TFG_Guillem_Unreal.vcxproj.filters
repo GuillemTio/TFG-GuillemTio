@@ -11,6 +11,7 @@
     <None Include="..\..\Source\TFG_Guillem_UnrealEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -75,6 +76,15 @@
     <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\OutputConnector.cpp">
       <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\Platform2Actor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\Platform3Actor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\Platform4Actor.cpp">
+      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\PlatformActor.cpp">
       <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
     </ClCompile>
@@ -127,6 +137,15 @@
       <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\OutputConnector.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\Platform2Actor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\Platform3Actor.h">
+      <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\Platform4Actor.h">
       <Filter>Source\TFG_Guillem_Unreal\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Public\PlatformActor.h">
