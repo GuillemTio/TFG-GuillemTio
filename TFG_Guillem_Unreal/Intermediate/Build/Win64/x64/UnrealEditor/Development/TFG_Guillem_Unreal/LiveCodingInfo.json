@@ -35,14 +35,14 @@
 			"NonActivableActor.cpp.obj",
 			"OutputConnector.cpp.obj",
 			"Platform2Actor.cpp.obj",
-			"Platform4Actor.cpp.obj",
+			"Platform3Actor.cpp.obj",
 			"PlatformActor.cpp.obj",
 			"ProvaVehicle.cpp.obj",
-			"SpringActor.cpp.obj",
 			"ThrusterActor.cpp.obj",
 			"WheelActor.cpp.obj",
 			"TFG_Guillem_Unreal.cpp.obj",
-			"Platform3Actor.cpp.obj"
+			"Platform4Actor.cpp.obj",
+			"SpringActor.cpp.obj"
 		]
 	}
 }

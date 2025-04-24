@@ -22,8 +22,8 @@ private:
 	UPhysicsConstraintComponent* constraintBase = nullptr;
 	UPhysicsConstraintComponent* constraintHandle = nullptr;
 
-	float rayDistance = 125;
-	float impulsePower = 60000;
+	float rayDistance = 25;
+	float impulsePower = 18000;
 
 public:
 	ASpringActor();

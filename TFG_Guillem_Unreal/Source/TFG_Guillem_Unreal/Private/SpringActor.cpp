@@ -37,7 +37,7 @@ ASpringActor::ASpringActor()
 		handleMesh->SetSimulatePhysics(true);
 	}
 
-	mass = 20.0f;
+	mass = 40.0f;
 	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 	baseMesh->SetMassOverrideInKg(NAME_None, mass);
 	handleMesh->SetMassOverrideInKg(NAME_None, mass);
@@ -51,6 +51,7 @@ void ASpringActor::Tick(float DeltaTime)
 
 void ASpringActor::Activate()
 {
+	actorMesh->GetUpVector().Normalize();
 	actorMesh->AddImpulse(-actorMesh->GetUpVector() * impulsePower);
 }
 
@@ -69,14 +70,14 @@ void ASpringActor::ToggleActivation()
 
 	bool bHit = GetWorld()->LineTraceSingleByChannel(
 		hitResult,
-		actorMesh->GetComponentLocation(),
+		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * 10,
 		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * rayDistance,
 		ECC_WorldStatic,
 		parameters
 	);
 
 	DrawDebugLine(GetWorld(), 
-		actorMesh->GetComponentLocation(), 
+		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * 10,
 		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * rayDistance,
 		FColor::Magenta,
 		true,

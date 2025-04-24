@@ -13,7 +13,7 @@ APlatform4Actor::APlatform4Actor()
 
 	actorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlatformMesh"));
 	actorMesh->SetupAttachment(RootComponent);
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlatformMeshAsset(TEXT("/Game/Media/3DModels/Platform2.Platform2")); //!!!!!
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlatformMeshAsset(TEXT("/Game/Media/3DModels/Platform4.Platform4"));
 
 	if (PlatformMeshAsset.Succeeded())
 	{
@@ -23,7 +23,7 @@ APlatform4Actor::APlatform4Actor()
 
 	actorMesh->SetSimulatePhysics(true);
 
-	mass = 1400.0f; //!!!!!
+	mass = 1300.0f; 
 	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 }
 
