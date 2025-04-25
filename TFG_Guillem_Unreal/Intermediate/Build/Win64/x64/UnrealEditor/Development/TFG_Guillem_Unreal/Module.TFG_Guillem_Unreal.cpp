@@ -37,6 +37,5 @@
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/PlatformActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/ProvaVehicle.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/SpringActor.cpp"
-#include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/ThrusterActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/WheelActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/TFG_Guillem_Unreal.cpp"

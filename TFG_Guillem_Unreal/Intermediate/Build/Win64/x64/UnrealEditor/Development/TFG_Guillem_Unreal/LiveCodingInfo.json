@@ -40,9 +40,9 @@
 			"PlatformActor.cpp.obj",
 			"ProvaVehicle.cpp.obj",
 			"SpringActor.cpp.obj",
-			"ThrusterActor.cpp.obj",
 			"WheelActor.cpp.obj",
-			"TFG_Guillem_Unreal.cpp.obj"
+			"TFG_Guillem_Unreal.cpp.obj",
+			"ThrusterActor.cpp.obj"
 		]
 	}
 }

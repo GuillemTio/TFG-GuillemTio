@@ -2,6 +2,8 @@
 #include "ThrusterActor.h"
 #include "InputConnector.h"
 #include "Engine/StaticMeshSocket.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 
 AThrusterActor::AThrusterActor()
 {
@@ -17,12 +19,16 @@ AThrusterActor::AThrusterActor()
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, "Mesh not correctly set");
 
-
 	thruster = CreateDefaultSubobject<UPhysicsThrusterComponent>(TEXT("ThrusterComponent"));
-	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, thruster->GetForwardVector().ToString());
-	//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, FVector::UpVector.ToString());
-	//
-	//thruster->SetRelativeRotation(FVector(0, 0, 1).Rotation());
+
+	thrusterFX = CreateDefaultSubobject<UNiagaraComponent>(TEXT("ThrusterParticles"));
+	static ConstructorHelpers::FObjectFinder<UNiagaraSystem>
+		ThrusterParticles(TEXT("/Game/Fab/MixedVFX/Particles/Fires/NS_TorchFire.NS_TorchFire"));
+
+	if (ThrusterParticles.Succeeded())
+	{
+		thrusterFX->SetAsset(ThrusterParticles.Object);
+	}
 
 	mass = 10.0f;
 	actorMesh->SetMassOverrideInKg(NAME_None, mass);
@@ -32,16 +38,19 @@ AThrusterActor::AThrusterActor()
 void AThrusterActor::Activate()
 {
 	thruster->Activate();
+	thrusterFX->Activate();
 }
 
 void AThrusterActor::Deactivate()
 {
 	thruster->Deactivate();
+	thrusterFX->Deactivate();
 }
 
 void AThrusterActor::ToggleActivation()
 {
 	thruster->ToggleActive();
+	thruster->IsActive() ? thrusterFX->Activate() : thrusterFX->Deactivate();
 }
 
 void AThrusterActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
@@ -60,10 +69,15 @@ void AThrusterActor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	AddInstanceComponent(thrusterFX);
+
+	thrusterFX->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+	thrusterFX->UpdateComponentToWorld();
+	thrusterFX->SetRelativeScale3D(FVector(20, 20, 20));
+	thrusterFX->SetRelativeRotation(FRotator(180, 0, 0)); //Depends on the given particle system
 
 	AddInstanceComponent(thruster);
 
-	//thruster->RegisterComponent();
 	thruster->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 	thruster->UpdateComponentToWorld();
 	thruster->ThrustStrength = thrusterPower;
@@ -84,9 +98,6 @@ void AThrusterActor::BeginPlay()
 		}
 	}
 
+	thruster->IsActive() ? thrusterFX->Activate() : thrusterFX->Deactivate();
 }
 
-//void AThrusterActor::Connect(UConnector* passedConnector, FVector toAttachLocation)
-//{
-//	Connectors[0]->AttachTo(passedConnector, toAttachLocation);
-//}

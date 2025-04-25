@@ -7,6 +7,7 @@
 #include <PhysicsEngine/PhysicsThrusterComponent.h>
 #include "ThrusterActor.generated.h"
 
+class UNiagaraComponent;
 /**
  * 
  */
@@ -20,6 +21,8 @@ private:
 
 	float thrusterPower = 18000.0;
 
+	UNiagaraComponent* thrusterFX;
+
 public:
 	AThrusterActor();
 
@@ -28,7 +31,6 @@ public:
 	virtual void ToggleActivation() override;
 
 	virtual void SetConstraintLimits(UPhysicsConstraintComponent& constraint) override;
-	//virtual void Connect(UConnector* passedConnector, FVector toAttachLocation) override;
 	
 protected: 	
 	virtual void BeginPlay() override;
