@@ -7,7 +7,6 @@
 
 ASpringActor::ASpringActor()
 {
-
 	actorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SpringMesh"));
 	SetRootComponent(actorMesh);
 
@@ -25,6 +24,7 @@ ASpringActor::ASpringActor()
 	{
 		actorMesh->SetStaticMesh(SpringMeshAsset.Object);
 		actorMesh->SetSimulatePhysics(true);
+		actorMesh->SetRelativeScale3D(restScale);
 	}
 	if (SpringBaseMeshAsset.Succeeded())
 	{
@@ -46,13 +46,14 @@ ASpringActor::ASpringActor()
 
 void ASpringActor::Tick(float DeltaTime)
 {
-
+	actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), restScale, 0.2f));
 }
 
 void ASpringActor::Activate()
 {
 	actorMesh->GetUpVector().Normalize();
 	actorMesh->AddImpulse(-actorMesh->GetUpVector() * impulsePower);
+	actorMesh->SetRelativeScale3D(onImpulseScale);
 }
 
 void ASpringActor::Deactivate()
@@ -102,6 +103,8 @@ void ASpringActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 
 void ASpringActor::BeginPlay()
 {
+	Super::BeginPlay();
+
 	SetSpringConstraints();
 
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)

@@ -23,7 +23,10 @@ private:
 	UPhysicsConstraintComponent* constraintHandle = nullptr;
 
 	float rayDistance = 25;
-	float impulsePower = 18000;
+	float impulsePower = 19000;
+
+	FVector onImpulseScale = FVector(0.17f, 0.17f, 0.2f);
+	FVector restScale = FVector(0.13f, 0.13f, 0.13f);
 
 public:
 	ASpringActor();

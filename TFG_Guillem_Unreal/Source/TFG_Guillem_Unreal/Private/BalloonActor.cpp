@@ -14,7 +14,7 @@ ABalloonActor::ABalloonActor()
 	if (BalloonMeshAsset.Succeeded())
 	{
 		actorMesh->SetStaticMesh(BalloonMeshAsset.Object);
-		actorMesh->SetRelativeScale3D(FVector(1.2f, 1.2f, 1.2f));
+		actorMesh->SetRelativeScale3D(uninflatedScale);
 		actorMesh->SetSimulatePhysics(true);
 	}
 
@@ -28,7 +28,10 @@ void ABalloonActor::Tick(float DeltaTime)
 	if (isBalloonForceActive)
 	{
 		actorMesh->AddForce(FVector::UpVector * balloonForce);
+		//only for visual feedback
+		actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), inflatedScale, 0.5f));
 	}
+	else actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), uninflatedScale, 0.5f));
 }
 
 void ABalloonActor::Activate()

@@ -18,6 +18,9 @@ private:
 	bool isBalloonForceActive = false;
 	float balloonForce = 85000;
 
+	FVector inflatedScale = FVector(0.27f, 0.27f, 0.27f);
+	FVector uninflatedScale = FVector(0.18f, 0.18f, 0.18f);
+
 public:
 	ABalloonActor();
 
