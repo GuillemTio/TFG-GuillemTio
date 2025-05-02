@@ -23,9 +23,9 @@ private:
 	UPhysicsConstraintComponent* constraintHandle = nullptr;
 
 	float rayDistance = 25;
-	float impulsePower = 19000;
+	float impulsePower = 21000;
 
-	FVector onImpulseScale = FVector(0.17f, 0.17f, 0.2f);
+	FVector onImpulseScale = FVector(0.24f, 0.24f, 0.13f);
 	FVector restScale = FVector(0.13f, 0.13f, 0.13f);
 
 public:

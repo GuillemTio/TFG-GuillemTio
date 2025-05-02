@@ -37,7 +37,7 @@ ASpringActor::ASpringActor()
 		handleMesh->SetSimulatePhysics(true);
 	}
 
-	mass = 40.0f;
+	mass = 30.0f;
 	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 	baseMesh->SetMassOverrideInKg(NAME_None, mass);
 	handleMesh->SetMassOverrideInKg(NAME_None, mass);
@@ -46,7 +46,7 @@ ASpringActor::ASpringActor()
 
 void ASpringActor::Tick(float DeltaTime)
 {
-	actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), restScale, 0.2f));
+	actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), restScale, 0.1f));
 }
 
 void ASpringActor::Activate()

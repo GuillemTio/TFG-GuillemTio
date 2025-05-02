@@ -22,6 +22,7 @@ APlatform2Actor::APlatform2Actor()
 	}
 
 	actorMesh->SetSimulatePhysics(true);
+	actorMesh->SetAngularDamping(3.0f);
 
 	mass = 1400.0f;
 	actorMesh->SetMassOverrideInKg(NAME_None, mass);
