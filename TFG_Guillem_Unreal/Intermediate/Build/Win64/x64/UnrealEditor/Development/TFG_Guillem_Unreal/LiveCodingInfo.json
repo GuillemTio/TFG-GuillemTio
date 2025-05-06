@@ -24,7 +24,6 @@
 			"WheelActor.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"ActivableActor.cpp.obj",
-			"AttachableActor.cpp.obj",
 			"BalloonActor.cpp.obj",
 			"BowlActor.cpp.obj",
 			"ClawsActor.cpp.obj",
@@ -34,15 +33,16 @@
 			"InputConnector.cpp.obj",
 			"NonActivableActor.cpp.obj",
 			"OutputConnector.cpp.obj",
-			"ProvaVehicle.cpp.obj",
-			"ThrusterActor.cpp.obj",
-			"WheelActor.cpp.obj",
-			"TFG_Guillem_Unreal.cpp.obj",
 			"Platform2Actor.cpp.obj",
 			"Platform3Actor.cpp.obj",
 			"Platform4Actor.cpp.obj",
 			"PlatformActor.cpp.obj",
-			"SpringActor.cpp.obj"
+			"ProvaVehicle.cpp.obj",
+			"SpringActor.cpp.obj",
+			"ThrusterActor.cpp.obj",
+			"WheelActor.cpp.obj",
+			"TFG_Guillem_Unreal.cpp.obj",
+			"AttachableActor.cpp.obj"
 		]
 	}
 }

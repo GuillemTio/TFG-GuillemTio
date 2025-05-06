@@ -37,9 +37,6 @@ public:
 
 	virtual void SetConstraintLimits(UPhysicsConstraintComponent& constraint) PURE_VIRTUAL(AAttachableActor::SetConstraint, );
 
-	//UFUNCTION(BlueprintCallable) DEPRECATED WITH NEW SYSTEM
-	//virtual void Connect(UConnector* passedConnector, FVector toAttachLocation) PURE_VIRTUAL(AAttachableActor::Connect, );
-
 protected:
 	virtual void BeginPlay() override;
 
