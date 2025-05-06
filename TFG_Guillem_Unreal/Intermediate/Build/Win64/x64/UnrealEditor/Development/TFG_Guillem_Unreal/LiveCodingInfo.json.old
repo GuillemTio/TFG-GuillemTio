@@ -2,11 +2,8 @@
 	"RemapUnityFiles": 
 	{
 		"Module.TFG_Guillem_Unreal.cpp.obj": [
-			"ActivableActor.gen.cpp.obj",
 			"AttachableActor.gen.cpp.obj",
-			"BalloonActor.gen.cpp.obj",
 			"BowlActor.gen.cpp.obj",
-			"ClawsActor.gen.cpp.obj",
 			"Connector.gen.cpp.obj",
 			"ConnectorUserData.gen.cpp.obj",
 			"CrossActor.gen.cpp.obj",
@@ -18,9 +15,6 @@
 			"Platform4Actor.gen.cpp.obj",
 			"PlatformActor.gen.cpp.obj",
 			"ProvaVehicle.gen.cpp.obj",
-			"SpringActor.gen.cpp.obj",
-			"TFG_Guillem_Unreal.init.gen.cpp.obj",
-			"ThrusterActor.gen.cpp.obj",
 			"WheelActor.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"ActivableActor.cpp.obj",
@@ -42,7 +36,13 @@
 			"SpringActor.cpp.obj",
 			"ThrusterActor.cpp.obj",
 			"WheelActor.cpp.obj",
-			"TFG_Guillem_Unreal.cpp.obj"
+			"TFG_Guillem_Unreal.cpp.obj",
+			"ActivableActor.gen.cpp.obj",
+			"BalloonActor.gen.cpp.obj",
+			"ClawsActor.gen.cpp.obj",
+			"SpringActor.gen.cpp.obj",
+			"TFG_Guillem_Unreal.init.gen.cpp.obj",
+			"ThrusterActor.gen.cpp.obj"
 		]
 	}
 }

@@ -21,6 +21,7 @@
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Intermediate/Build/Win64/UnrealEditor/Inc/TFG_Guillem_Unreal/UHT/WheelActor.gen.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Intermediate/Build/Win64/x64/UnrealEditor/Development/TFG_Guillem_Unreal/PerModuleInline.gen.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/ActivableActor.cpp"
+#include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/AttachableActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/BalloonActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/BowlActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/ClawsActor.cpp"

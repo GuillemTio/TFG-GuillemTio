@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tfg_guillem_unreal\\singlefile\\outputconnector.h.cpp",
+        "Source": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tfg_guillem_unreal\\singlefile\\outputconnector.h.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tfg_guillem_unreal\\definitions.tfg_guillem_unreal.h",
-            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\tfg_guillem_unrealeditor\\development\\unrealed\\shareddefinitions.unrealed.project.valapi.cpplatest.h",
-            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\outputconnector.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\tfg_guillem_unreal\\definitions.tfg_guillem_unreal.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\tfg_guillem_unrealeditor\\development\\unrealed\\shareddefinitions.unrealed.project.valapi.cpplatest.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\outputconnector.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\platform.h",
@@ -441,7 +441,7 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\algo\\impl\\rangepointertype.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\math\\ray.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\math\\vector2dhalf.h",
-            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\connector.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\connector.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\pixelformat.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\misc\\fallbackstruct.h",
@@ -606,12 +606,12 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\serialization\\customversion.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\applicationcore\\public\\genericplatform\\icursor.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\applicationcore\\public\\genericplatform\\iinputinterface.h",
-            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\tfg_guillem_unreal\\uht\\connector.generated.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\tfg_guillem_unreal\\uht\\connector.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\scriptmacros.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\stack.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\enumproperty.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\fieldpathproperty.h",
-            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg_guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\tfg_guillem_unreal\\uht\\outputconnector.generated.h"
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealeditor\\inc\\tfg_guillem_unreal\\uht\\outputconnector.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
