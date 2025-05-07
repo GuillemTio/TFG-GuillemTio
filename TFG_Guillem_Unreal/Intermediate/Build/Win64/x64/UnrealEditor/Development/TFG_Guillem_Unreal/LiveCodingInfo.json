@@ -28,7 +28,6 @@
 			"BalloonActor.cpp.obj",
 			"BowlActor.cpp.obj",
 			"ClawsActor.cpp.obj",
-			"Connector.cpp.obj",
 			"ConnectorUserData.cpp.obj",
 			"CrossActor.cpp.obj",
 			"InputConnector.cpp.obj",
@@ -42,7 +41,8 @@
 			"SpringActor.cpp.obj",
 			"ThrusterActor.cpp.obj",
 			"WheelActor.cpp.obj",
-			"TFG_Guillem_Unreal.cpp.obj"
+			"TFG_Guillem_Unreal.cpp.obj",
+			"Connector.cpp.obj"
 		]
 	}
 }

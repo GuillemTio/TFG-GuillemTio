@@ -25,7 +25,6 @@
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/BalloonActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/BowlActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/ClawsActor.cpp"
-#include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/Connector.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/ConnectorUserData.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/CrossActor.cpp"
 #include "C:/Users/Guillem/Desktop/UNI/Treball de Fi de Grau/TFG-GuillemTio/TFG-GuillemTio/TFG_Guillem_Unreal/Source/TFG_Guillem_Unreal/Private/InputConnector.cpp"

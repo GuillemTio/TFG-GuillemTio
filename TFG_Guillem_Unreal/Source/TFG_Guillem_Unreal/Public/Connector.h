@@ -27,6 +27,7 @@ public:
 	UPROPERTY(BlueprintReadOnly)
 	AAttachableActor* actorOwner;
 
+
 	virtual void SetConnector(AAttachableActor& attachableActor, FVector relativeAttachPosition, FRotator socketRotation);
 
 	UFUNCTION(BlueprintCallable)
