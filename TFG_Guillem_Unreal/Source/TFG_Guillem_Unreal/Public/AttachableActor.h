@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include <PhysicsEngine/PhysicsConstraintComponent.h> // segurament necessiti incluir Connector 
+#include <PhysicsEngine/PhysicsConstraintComponent.h>
 #include "AttachableActor.generated.h"
 
 class UConnector;

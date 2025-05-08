@@ -59,7 +59,3 @@ void AWheelActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 	constraint.SetAngularTwistLimit(ACM_Free, 0.0f);
 }
 
-//void AWheelActor::Connect(UConnector* passedConnector, FVector toAttachLocation)
-//{
-//	Connectors[0]->AttachTo(passedConnector, toAttachLocation);
-//}

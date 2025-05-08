@@ -10,22 +10,8 @@
 
 void UInputConnector::SetConnector(AAttachableActor& attachableActor, FVector relativeAttachPosition, FRotator socketRotation)
 {
-	actorOwner = &attachableActor;
 
-	sceneComponent = NewObject<USceneComponent>(actorOwner);
-	actorOwner->AddInstanceComponent(sceneComponent);
-
-	sceneComponent->RegisterComponent();
-	sceneComponent->AttachToComponent(actorOwner->GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
-	sceneComponent->SetRelativeLocation(relativeAttachPosition);
-	sceneComponent->SetRelativeRotation(socketRotation);
-
-	connectorMesh = NewObject<UStaticMeshComponent>(actorOwner, TEXT("ConnectorMesh"));
-	actorOwner->AddInstanceComponent(connectorMesh);
-
-	connectorMesh->RegisterComponent();
-	connectorMesh->AttachToComponent(sceneComponent, FAttachmentTransformRules::KeepRelativeTransform);
-	connectorMesh->UpdateComponentToWorld();
+	Super::SetConnector(attachableActor, relativeAttachPosition, socketRotation);
 
 	UStaticMesh* sphereMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/SphereInput.SphereInput"));
 	if (sphereMesh)
@@ -33,16 +19,6 @@ void UInputConnector::SetConnector(AAttachableActor& attachableActor, FVector re
 		connectorMesh->SetStaticMesh(sphereMesh);
 		connectorMesh->SetRelativeScale3D(FVector(1.0f) / actorOwner->GetActorScale3D() * connectorSize);
 	}
-
-	connectorMesh->SetSimulatePhysics(false);
-	connectorMesh->SetEnableGravity(false);
-	connectorMesh->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-
-	connectorMesh->SetCollisionProfileName("Connectors");
-
-	UConnectorUserData* connectorData = NewObject<UConnectorUserData>(this);
-	connectorData->connectorAttached = this; 
-	connectorMesh->AddAssetUserData(connectorData);
 
 }
 

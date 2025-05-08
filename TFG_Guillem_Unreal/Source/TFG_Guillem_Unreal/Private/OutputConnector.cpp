@@ -8,40 +8,17 @@
 
 void UOutputConnector::SetConnector(AAttachableActor& attachableActor, FVector relativeAttachPosition, FRotator socketRotation)
 {
-	actorOwner = &attachableActor;
+	Super::SetConnector(attachableActor, relativeAttachPosition, socketRotation);
+
 	constraint = NewObject<UPhysicsConstraintComponent>(&attachableActor);
 
-	sceneComponent = NewObject<USceneComponent>(actorOwner);
-	actorOwner->AddInstanceComponent(sceneComponent);
-
-	sceneComponent->RegisterComponent();
-	sceneComponent->AttachToComponent(actorOwner->GetRootComponent(), FAttachmentTransformRules::KeepRelativeTransform);
-	sceneComponent->SetRelativeLocation(relativeAttachPosition);
-	sceneComponent->SetRelativeRotation(socketRotation);
-
-	connectorMesh = NewObject<UStaticMeshComponent>(actorOwner);
-	actorOwner->AddInstanceComponent(connectorMesh);
-
-	connectorMesh->RegisterComponent();
-	connectorMesh->AttachToComponent(sceneComponent, FAttachmentTransformRules::KeepRelativeTransform);
-	connectorMesh->UpdateComponentToWorld();
-
-	UStaticMesh* cubeMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/SphereOutput.SphereOutput"));
-	if (cubeMesh)
+	UStaticMesh* sphereMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/SphereOutput.SphereOutput"));
+	if (sphereMesh)
 	{
-		connectorMesh->SetStaticMesh(cubeMesh);
+		connectorMesh->SetStaticMesh(sphereMesh);
 		connectorMesh->SetRelativeScale3D(FVector(1.0f) / actorOwner->GetActorRelativeScale3D() * connectorSize);
 	}
 
-	connectorMesh->SetSimulatePhysics(false);
-	connectorMesh->SetEnableGravity(false);
-	connectorMesh->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-
-	connectorMesh->SetCollisionProfileName("Connectors");
-
-	UConnectorUserData* connectorData = NewObject<UConnectorUserData>(this);
-	connectorData->connectorAttached = this;
-	connectorMesh->AddAssetUserData(connectorData);
 }
 
 void UOutputConnector::AttachTo(UConnector* connectorToAttach, FVector attachPosition)
