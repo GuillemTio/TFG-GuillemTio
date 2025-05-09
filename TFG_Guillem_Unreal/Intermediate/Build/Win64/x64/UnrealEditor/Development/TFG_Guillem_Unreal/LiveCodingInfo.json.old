@@ -37,12 +37,12 @@
 			"ProvaVehicle.cpp.obj",
 			"SpringActor.cpp.obj",
 			"ThrusterActor.cpp.obj",
-			"WheelActor.cpp.obj",
 			"TFG_Guillem_Unreal.cpp.obj",
 			"AttachableActor.cpp.obj",
 			"Connector.cpp.obj",
 			"InputConnector.cpp.obj",
-			"OutputConnector.cpp.obj"
+			"OutputConnector.cpp.obj",
+			"WheelActor.cpp.obj"
 		]
 	}
 }

@@ -62,7 +62,6 @@ void AClawsActor::Deactivate()
 
 void AClawsActor::ToggleActivation()
 {
-	//rotar Y. Claw1 50 obert, -15 tancat, claw2 -50 obert, 15 tancat 
 	//areClawsClosed = areClawsClosed ? false : true;
 	areClawsClosed ? Deactivate() : Activate();
 	areClawsClosed = !areClawsClosed;
