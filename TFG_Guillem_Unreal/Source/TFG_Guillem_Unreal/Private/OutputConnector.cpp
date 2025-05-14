@@ -12,6 +12,7 @@ void UOutputConnector::SetConnector(AAttachableActor& attachableActor, FVector r
 
 	constraint = NewObject<UPhysicsConstraintComponent>(&attachableActor);
 
+	//Visual mesh for the connector. Can be changed for a better visualization or to adapt the visuals
 	UStaticMesh* sphereMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/SphereOutput.SphereOutput"));
 	if (sphereMesh)
 	{
@@ -23,22 +24,26 @@ void UOutputConnector::SetConnector(AAttachableActor& attachableActor, FVector r
 
 void UOutputConnector::AttachTo(UConnector* connectorToAttach, FVector attachPosition)
 {
+	//Checking if already connected
 	if (connectedTo) return;
 
 	if (UInputConnector* inputConnector = Cast<UInputConnector>(connectorToAttach)) 
 	{
-
+		//Checking if the new possible position is correct and doesn't overlap
 		if (!inputConnector->CanAdaptActorOwnerTransform(attachPosition, sceneComponent->GetComponentRotation(), this))
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Yellow, TEXT("Object doesn't fit"));
 			return;
 		}
 
+		//Adapting constraint transform
 		constraint->SetWorldLocation(inputConnector->actorOwner->GetActorLocation());
 		constraint->SetWorldRotation(sceneComponent->GetComponentRotation());
 
+		//Limits depend on the attached object that has the Input connector
 		inputConnector->actorOwner->SetConstraintLimits(*constraint);
 
+		//Setting the attached actors
 		constraint->SetConstrainedComponents(
 			actorOwner->FindComponentByClass<UPrimitiveComponent>(), NAME_None,
 			inputConnector->actorOwner->FindComponentByClass<UPrimitiveComponent>(), NAME_None
@@ -55,6 +60,7 @@ void UOutputConnector::AttachTo(UConnector* connectorToAttach, FVector attachPos
 		DrawDebugLine(GetWorld(), constraint->GetComponentLocation(), actorOwner->GetActorLocation(), FColor::Red, true, 20.0f, 0, 5.0f);
 		DrawDebugLine(GetWorld(), constraint->GetComponentLocation(), attachableActor->GetActorLocation(), FColor::Blue, true, 20.0f, 0, 5.0f);*/
 
+		//Setting the connectedTo variable for both connectors to set their availability
 		connectedTo = inputConnector;
 		inputConnector->SetConnectedTo(this);
 	}
@@ -66,10 +72,10 @@ void UOutputConnector::Disconnect()
 	{
 		UConnector* otherConnector = connectedTo;
 		connectedTo = nullptr;
-		otherConnector->Disconnect();
+		otherConnector->Disconnect(); //Calls for its connected connector disconnect() while erasing it from the pointer
 
-		constraint->SetConstrainedComponents(nullptr, NAME_None, nullptr, NAME_None);
+		constraint->SetConstrainedComponents(nullptr, NAME_None, nullptr, NAME_None); //Removing attachment
 		constraint->UnregisterComponent();
-		actorOwner->RemoveInstanceComponent(constraint);
+		actorOwner->RemoveInstanceComponent(constraint); //Removing component
 	}
 }

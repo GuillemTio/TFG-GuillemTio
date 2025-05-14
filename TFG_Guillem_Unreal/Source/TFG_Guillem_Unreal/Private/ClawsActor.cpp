@@ -7,6 +7,7 @@
 
 AClawsActor::AClawsActor()
 {
+	//Claws actor has 3 meshes, the main one works as the base, and the other two make the grabbing claws
 	actorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ClawBaseMesh"));
 	SetRootComponent(actorMesh);
 
@@ -48,6 +49,7 @@ void AClawsActor::Tick(float DeltaTime)
 {
 }
 
+//Activate and Deactivate set the angular velocity target in opposite ways for each claw to open and close.
 void AClawsActor::Activate()
 {
 	constraintClaw1->SetAngularVelocityTarget(FVector(0.0, -1.0, 0.0));
@@ -62,7 +64,6 @@ void AClawsActor::Deactivate()
 
 void AClawsActor::ToggleActivation()
 {
-	//areClawsClosed = areClawsClosed ? false : true;
 	areClawsClosed ? Deactivate() : Activate();
 	areClawsClosed = !areClawsClosed;
 }
@@ -82,8 +83,9 @@ void AClawsActor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	SetClawsConstraints();
+	SetClawsConstraints(); //Sets the constraints between the claws and the base mesh
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)
@@ -113,6 +115,7 @@ void AClawsActor::SetClawsConstraints()
 	constraintClaw1->SetWorldRotation(clawMesh1->GetComponentRotation());
 	constraintClaw2->SetWorldRotation(clawMesh2->GetComponentRotation());
 
+	//They both can only turn in one way
 	constraintClaw1->SetLinearXLimit(LCM_Locked, 0.0f);
 	constraintClaw1->SetLinearYLimit(LCM_Locked, 0.0f);
 	constraintClaw1->SetLinearZLimit(LCM_Locked, 0.0f);
@@ -127,6 +130,7 @@ void AClawsActor::SetClawsConstraints()
 	constraintClaw2->SetAngularSwing2Limit(ACM_Limited, 25.0f);
 	constraintClaw2->SetAngularTwistLimit(ACM_Locked, 0.0f);
 
+	//Important settings for correctly setting the angular velocity targets
 	constraintClaw1->SetAngularDriveMode(EAngularDriveMode::TwistAndSwing);
 	constraintClaw1->SetAngularVelocityDriveTwistAndSwing(false, true);
 	constraintClaw1->SetAngularDriveParams(30.f, 80.f, 0.f);

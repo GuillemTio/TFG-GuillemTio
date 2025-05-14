@@ -22,7 +22,9 @@ private:
 	UPhysicsConstraintComponent* constraintBase = nullptr;
 	UPhysicsConstraintComponent* constraintHandle = nullptr;
 
+	UPROPERTY(EditAnywhere, Category = "SpringActor")
 	float rayDistance = 25;
+	UPROPERTY(EditAnywhere, Category = "SpringActor")
 	float impulsePower = 21000;
 
 	FVector onImpulseScale = FVector(0.24f, 0.24f, 0.13f);

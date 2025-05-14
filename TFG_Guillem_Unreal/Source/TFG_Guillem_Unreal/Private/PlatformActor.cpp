@@ -22,7 +22,7 @@ APlatformActor::APlatformActor()
 	}
 
 	actorMesh->SetSimulatePhysics(true);
-	actorMesh->SetAngularDamping(3.0f);
+	actorMesh->SetAngularDamping(3.0f); //Damping angular forces for an smoother movement
 
 	mass = 1000.0f;
 	actorMesh->SetMassOverrideInKg(NAME_None, mass);
@@ -32,6 +32,7 @@ void APlatformActor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)
@@ -40,6 +41,7 @@ void APlatformActor::BeginPlay()
 			FVector LocalPosition = actorMesh->GetComponentTransform().TransformPosition(Socket->RelativeLocation);
 			LocalPosition = this->GetTransform().InverseTransformPosition(LocalPosition);
 
+			//Platform actors have Output connectors
 			UOutputConnector* NewConnector = NewObject<UOutputConnector>(this);
 			NewConnector->SetConnector(*this, LocalPosition, Socket->RelativeRotation);
 			connectors.Add(NewConnector);

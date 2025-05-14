@@ -7,6 +7,7 @@
 
 ASpringActor::ASpringActor()
 {
+	//This actor uses 3 meshes just for visuals. Only the main actor actually has collision
 	actorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SpringMesh"));
 	SetRootComponent(actorMesh);
 
@@ -24,7 +25,7 @@ ASpringActor::ASpringActor()
 	{
 		actorMesh->SetStaticMesh(SpringMeshAsset.Object);
 		actorMesh->SetSimulatePhysics(true);
-		actorMesh->SetRelativeScale3D(restScale);
+		actorMesh->SetRelativeScale3D(restScale); //Starting with the scale on rest
 	}
 	if (SpringBaseMeshAsset.Succeeded())
 	{
@@ -46,11 +47,13 @@ ASpringActor::ASpringActor()
 
 void ASpringActor::Tick(float DeltaTime)
 {
+	//Only for visual feedback
 	actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), restScale, 0.1f));
 }
 
 void ASpringActor::Activate()
 {
+	//Generates impulse on the opposite Up direction of the main actor
 	actorMesh->GetUpVector().Normalize();
 	actorMesh->AddImpulse(-actorMesh->GetUpVector() * impulsePower);
 	actorMesh->SetRelativeScale3D(onImpulseScale);
@@ -63,13 +66,12 @@ void ASpringActor::Deactivate()
 void ASpringActor::ToggleActivation()
 {
 	FHitResult hitResult;
-	FVector Start = GetActorLocation();
-	FVector End = Start + GetActorForwardVector() * 1000.0f;
 
 	FCollisionQueryParams parameters;
-	parameters.AddIgnoredActor(this); // Ignora el propio actor
+	parameters.AddIgnoredActor(this); // Ignores itself
 
-	bool bHit = GetWorld()->LineTraceSingleByChannel(
+	//Depending on the line trace on static objects, the spring activates or not
+	bool hit = GetWorld()->LineTraceSingleByChannel(
 		hitResult,
 		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * 10,
 		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * rayDistance,
@@ -77,14 +79,15 @@ void ASpringActor::ToggleActivation()
 		parameters
 	);
 
-	DrawDebugLine(GetWorld(), 
+	/* RAY DEBUG
+	DrawDebugLine(GetWorld(),
 		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * 10,
 		actorMesh->GetComponentLocation() + actorMesh->GetUpVector() * rayDistance,
 		FColor::Magenta,
 		true,
-		10.0);
+		10.0);*/
 
-	if (bHit)
+	if (hit)
 	{
 		Activate();
 	}
@@ -107,6 +110,7 @@ void ASpringActor::BeginPlay()
 
 	SetSpringConstraints();
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)
@@ -127,6 +131,7 @@ void ASpringActor::BeginPlay()
 
 void ASpringActor::SetSpringConstraints()
 {
+	//This sets up the physical constraints for the two extra meshes
 
 	constraintBase = NewObject<UPhysicsConstraintComponent>(this);
 	constraintHandle = NewObject<UPhysicsConstraintComponent>(this);

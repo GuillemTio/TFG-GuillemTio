@@ -17,7 +17,6 @@ private:
 	UPhysicsConstraintComponent* constraint;
 
 public:
-
 	virtual void SetConnector(AAttachableActor& attachableActor, FVector relativeAttachPosition, FRotator socketRotation) override;
 
 	virtual void AttachTo(UConnector* connectorToAttach, FVector attachPosition) override;

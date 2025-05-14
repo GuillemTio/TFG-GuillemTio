@@ -32,6 +32,7 @@ void APlatform4Actor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)

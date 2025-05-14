@@ -88,12 +88,6 @@
     <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\PlatformActor.cpp">
       <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ProvaVehicle.cpp">
-      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\ProvaVehicle.h">
-      <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\TFG_Guillem_Unreal\Private\SpringActor.cpp">
       <Filter>Source\TFG_Guillem_Unreal\Private</Filter>
     </ClCompile>

@@ -35,13 +35,24 @@ struct Z_Construct_UClass_AThrusterActor_Statics
 		{ "IncludePath", "ThrusterActor.h" },
 		{ "ModuleRelativePath", "Public/ThrusterActor.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_thrusterPower_MetaData[] = {
+		{ "Category", "ThrusterActor" },
+		{ "ModuleRelativePath", "Public/ThrusterActor.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_thrusterPower;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AThrusterActor>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AThrusterActor_Statics::NewProp_thrusterPower = { "thrusterPower", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AThrusterActor, thrusterPower), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_thrusterPower_MetaData), NewProp_thrusterPower_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AThrusterActor_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThrusterActor_Statics::NewProp_thrusterPower,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AThrusterActor_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AThrusterActor_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActivableActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_TFG_Guillem_Unreal,
@@ -53,11 +64,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AThrusterActor_Statics:
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_AThrusterActor_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_AThrusterActor_Statics::PropPointers),
 	0,
 	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AThrusterActor_Statics::Class_MetaDataParams), Z_Construct_UClass_AThrusterActor_Statics::Class_MetaDataParams)
@@ -82,10 +93,10 @@ AThrusterActor::~AThrusterActor() {}
 struct Z_CompiledInDeferFile_FID_Users_Guillem_Desktop_UNI_Treball_de_Fi_de_Grau_TFG_GuillemTio_TFG_GuillemTio_TFG_Guillem_Unreal_Source_TFG_Guillem_Unreal_Public_ThrusterActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AThrusterActor, AThrusterActor::StaticClass, TEXT("AThrusterActor"), &Z_Registration_Info_UClass_AThrusterActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AThrusterActor), 4003742613U) },
+		{ Z_Construct_UClass_AThrusterActor, AThrusterActor::StaticClass, TEXT("AThrusterActor"), &Z_Registration_Info_UClass_AThrusterActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AThrusterActor), 4071362110U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Guillem_Desktop_UNI_Treball_de_Fi_de_Grau_TFG_GuillemTio_TFG_GuillemTio_TFG_Guillem_Unreal_Source_TFG_Guillem_Unreal_Public_ThrusterActor_h_128168840(TEXT("/Script/TFG_Guillem_Unreal"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Guillem_Desktop_UNI_Treball_de_Fi_de_Grau_TFG_GuillemTio_TFG_GuillemTio_TFG_Guillem_Unreal_Source_TFG_Guillem_Unreal_Public_ThrusterActor_h_3744525549(TEXT("/Script/TFG_Guillem_Unreal"),
 	Z_CompiledInDeferFile_FID_Users_Guillem_Desktop_UNI_Treball_de_Fi_de_Grau_TFG_GuillemTio_TFG_GuillemTio_TFG_Guillem_Unreal_Source_TFG_Guillem_Unreal_Public_ThrusterActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Guillem_Desktop_UNI_Treball_de_Fi_de_Grau_TFG_GuillemTio_TFG_GuillemTio_TFG_Guillem_Unreal_Source_TFG_Guillem_Unreal_Public_ThrusterActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -9,18 +9,20 @@ AThrusterActor::AThrusterActor()
 {
 	actorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ThrusterMesh"));
 	SetRootComponent(actorMesh);
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> ConeMeshAsset(TEXT("/Game/Fab/Toy_Rocket_4K_Free_3D_model/ToyRocket.ToyRocket"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> RocketMeshAsset(TEXT("/Game/Fab/Toy_Rocket_4K_Free_3D_model/ToyRocket.ToyRocket"));
 
-	if (ConeMeshAsset.Succeeded())
+	if (RocketMeshAsset.Succeeded())
 	{
-		actorMesh->SetStaticMesh(ConeMeshAsset.Object);
+		actorMesh->SetStaticMesh(RocketMeshAsset.Object);
 		actorMesh->SetRelativeScale3D(FVector(0.3f, 0.3f, 0.3f));
 		actorMesh->SetSimulatePhysics(true);
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, "Mesh not correctly set");
 
+	//Using the thruster component from Unreal, which has similar activation functions, but could have a different workaround
 	thruster = CreateDefaultSubobject<UPhysicsThrusterComponent>(TEXT("ThrusterComponent"));
 
+	//Setting particle system
 	thrusterFX = CreateDefaultSubobject<UNiagaraComponent>(TEXT("ThrusterParticles"));
 	static ConstructorHelpers::FObjectFinder<UNiagaraSystem>
 		ThrusterParticles(TEXT("/Game/Fab/MixedVFX/Particles/Fires/NS_TorchFire.NS_TorchFire"));
@@ -78,11 +80,13 @@ void AThrusterActor::BeginPlay()
 
 	AddInstanceComponent(thruster);
 
+	//Setting up the thruster component
 	thruster->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
 	thruster->UpdateComponentToWorld();
 	thruster->ThrustStrength = thrusterPower;
 	thruster->SetRelativeRotation(FVector::DownVector.Rotation());
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)

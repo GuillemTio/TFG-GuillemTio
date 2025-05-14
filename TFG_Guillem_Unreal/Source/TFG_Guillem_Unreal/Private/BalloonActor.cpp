@@ -27,8 +27,10 @@ void ABalloonActor::Tick(float DeltaTime)
 {
 	if (isBalloonForceActive)
 	{
+		//Adds force on the world Up vector, not based on any actor direction
 		actorMesh->AddForce(FVector::UpVector * balloonForce);
-		//only for visual feedback
+
+		//Only for visual feedback
 		actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), inflatedScale, 0.5f));
 	}
 	else actorMesh->SetRelativeScale3D(FMath::Lerp(actorMesh->GetRelativeScale3D(), uninflatedScale, 0.5f));
@@ -55,6 +57,7 @@ void ABalloonActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 	constraint.SetLinearYLimit(LCM_Locked, 0.0f);
 	constraint.SetLinearZLimit(LCM_Locked, 0.0f);
 
+	//To simulate the behaviour of a real balloon
 	constraint.SetAngularSwing1Limit(ACM_Limited, 30.0f);
 	constraint.SetAngularSwing2Limit(ACM_Limited, 30.0f);
 	constraint.SetAngularTwistLimit(ACM_Free, 0.0f);
@@ -64,6 +67,7 @@ void ABalloonActor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)

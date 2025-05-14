@@ -30,7 +30,7 @@ void UInputConnector::SetConnectedTo(UConnector* connector)
 void UInputConnector::AttachTo(UConnector* connectorToAttach, FVector attachPosition)
 {
 	if (Cast<UOutputConnector>(connectorToAttach)) {
-		connectorToAttach->AttachTo(this, attachPosition);
+		connectorToAttach->AttachTo(this, attachPosition); //The Output connector is in charge of handling the attachment within the constraint
 	}
 }
 
@@ -44,6 +44,7 @@ void UInputConnector::Disconnect()
 
 		actorOwner->SetPhysicsSimulation(true);
 
+		//Makes the actor owner impulse in the opposite direction of the connector
 		actorOwner->EjectionImpulse(-sceneComponent->GetComponentRotation().Vector()); 
 	}
 }
@@ -51,29 +52,12 @@ void UInputConnector::Disconnect()
 void UInputConnector::AdaptActorOwnerLocation(FVector attachPosition)
 {
 	actorOwner->SetActorLocation(actorOwner->GetActorLocation() - sceneComponent->GetComponentLocation() + attachPosition);
-	
-	//DrawDebugLine(
-	//	GetWorld(),
-	//	sceneComponent->GetComponentLocation(),
-	//	sceneComponent->GetComponentLocation() + sceneComponent->GetForwardVector() * 500,
-	//	FColor::Red,
-	//	true,
-	//	10.0
-	//);
-
 }
 
 void UInputConnector::AdaptActorOwnerRotation(FRotator lookAt)
 {
-
-	/*DrawDebugLine(
-		GetWorld(),
-		sceneComponent->GetComponentLocation(),
-		sceneComponent->GetComponentLocation() + lookAt.RotateVector(-FVector::ForwardVector) * 300,
-		FColor::Green,
-		true,
-		10.0
-	);*/
+	//The rotation is based on the Input connector being the opposite direction of the Output connector,
+	//but only rotating the actor in order to keep the same relation between the connector and the actor.
 
 	FRotator relativeRotation = sceneComponent->GetRelativeRotation();
 
@@ -89,18 +73,19 @@ void UInputConnector::AdaptActorOwnerRotation(FRotator lookAt)
 
 bool UInputConnector::CanAdaptActorOwnerTransform(FVector attachPosition, FRotator lookAt, const UConnector* otherConnector)
 {
+	//Saving the transform pre-adaptation
 	FVector currentPosition = actorOwner->GetActorLocation();
 	FRotator currentRotation = actorOwner->GetActorRotation();
 
 	AdaptActorOwnerRotation(lookAt);
 	AdaptActorOwnerLocation(attachPosition);
 
-	//UPrimitiveComponent* RootComp = Cast<UPrimitiveComponent>(actorOwner->GetRootComponent());
-
+	//Ignoring the meshes within the connecting actors
 	FComponentQueryParams parameters;
 	parameters.AddIgnoredActor(actorOwner);
 	parameters.AddIgnoredActor(otherConnector->actorOwner);
 
+	//Checking overlap
 	TArray<FOverlapResult> overlaps;
 	bool isOverlapping = actorOwner->GetWorld()->ComponentOverlapMulti(
 		overlaps,
@@ -112,13 +97,14 @@ bool UInputConnector::CanAdaptActorOwnerTransform(FVector attachPosition, FRotat
 
 	if (isOverlapping)
 	{
+		/* DEBUG WHICH ACTORS ARE OVERLAPPING
 		for (const FOverlapResult& result : overlaps)
 		{
 			if (AActor* overlappedActor = result.GetActor())
 			{
 				UE_LOG(LogTemp, Warning, TEXT("Overlapping with: %s"), *overlappedActor->GetName());
 			}
-		}
+		}*/
 
 		actorOwner->SetActorRotation(currentRotation);
 		actorOwner->SetActorLocation(currentPosition);

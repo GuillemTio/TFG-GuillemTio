@@ -19,6 +19,7 @@ class TFG_GUILLEM_UNREAL_API AThrusterActor : public AActivableActor
 private:
 	UPhysicsThrusterComponent* thruster;
 
+	UPROPERTY(EditAnywhere, Category = "ThrusterActor")
 	float thrusterPower = 18000.0;
 
 	UNiagaraComponent* thrusterFX;

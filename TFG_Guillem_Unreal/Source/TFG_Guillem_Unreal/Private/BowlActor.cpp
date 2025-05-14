@@ -31,6 +31,7 @@ void ABowlActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 	constraint.SetLinearYLimit(LCM_Locked, 0.0f);
 	constraint.SetLinearZLimit(LCM_Locked, 0.0f);
 
+	//Attached ball-and-socket behaviour
 	constraint.SetAngularSwing1Limit(ACM_Limited, 50.0f);
 	constraint.SetAngularSwing2Limit(ACM_Limited, 50.0f);
 	constraint.SetAngularTwistLimit(ACM_Limited, 50.0f);
@@ -40,6 +41,7 @@ void ABowlActor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)

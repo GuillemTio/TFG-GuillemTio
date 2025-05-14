@@ -14,7 +14,6 @@ class TFG_GUILLEM_UNREAL_API AAttachableActor : public AActor
 {
 	GENERATED_BODY()
 	
-	
 public:	
 	AAttachableActor();
 	float mass;
@@ -26,12 +25,11 @@ protected:
 private:
 	float ejectionPower = 100;
 
-
 public:	
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
-	void SetPhysicsSimulation(bool isActive);
+	void SetPhysicsSimulation(bool isActive); //Lets an easy access from Blueprints to manage physics simulation
 
 	void EjectionImpulse(FVector direction);
 

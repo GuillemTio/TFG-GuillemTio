@@ -16,6 +16,8 @@ class TFG_GUILLEM_UNREAL_API ABalloonActor : public AActivableActor
 
 private:
 	bool isBalloonForceActive = false;
+
+	UPROPERTY(EditAnywhere, Category = "BalloonActor")
 	float balloonForce = 85000;
 
 	FVector inflatedScale = FVector(0.27f, 0.27f, 0.27f);

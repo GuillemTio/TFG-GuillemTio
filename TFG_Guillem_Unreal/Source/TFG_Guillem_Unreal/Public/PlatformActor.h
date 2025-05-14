@@ -11,10 +11,8 @@ class TFG_GUILLEM_UNREAL_API APlatformActor : public ANonActivableActor
 {
 	GENERATED_BODY()
 
-
 public:
 	APlatformActor();
-
 
 public:
 	virtual void Tick(float DeltaTime) override;

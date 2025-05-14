@@ -32,13 +32,14 @@ void ACrossActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 
 	constraint.SetAngularSwing1Limit(ACM_Locked, 0.0f);
 	constraint.SetAngularSwing2Limit(ACM_Locked, 0.0f);
-	constraint.SetAngularTwistLimit(ACM_Free, 0.0f);
+	constraint.SetAngularTwistLimit(ACM_Free, 0.0f); //To give it a wheel/helix-like behaviour
 }
 
 void ACrossActor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)

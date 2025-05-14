@@ -9,11 +9,11 @@ AWheelActor::AWheelActor()
 
 	actorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("WheelMesh"));
 	actorMesh->SetupAttachment(RootComponent);
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> CylinderMeshAsset(TEXT("/Game/Media/3DModels/Wheel.Wheel"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> WheelMeshAsset(TEXT("/Game/Media/3DModels/Wheel.Wheel"));
 
-	if (CylinderMeshAsset.Succeeded())
+	if (WheelMeshAsset.Succeeded())
 	{
-		actorMesh->SetStaticMesh(CylinderMeshAsset.Object);
+		actorMesh->SetStaticMesh(WheelMeshAsset.Object);
 	}
 
 	actorMesh->SetSimulatePhysics(true);
@@ -26,6 +26,7 @@ void AWheelActor::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)
 	{
 		if (Socket)
