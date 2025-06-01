@@ -18,6 +18,8 @@ class TFG_GUILLEM_UNREAL_API UConnector : public UObject
 protected: 
 	USceneComponent* sceneComponent;
 	UStaticMeshComponent* connectorMesh;
+
+	UStaticMesh* preLoadedMesh;
 	
 	UConnector* connectedTo;
 

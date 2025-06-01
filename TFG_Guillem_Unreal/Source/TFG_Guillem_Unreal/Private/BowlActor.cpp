@@ -19,10 +19,6 @@ ABowlActor::ABowlActor()
 		actorMesh->SetSimulatePhysics(true);
 	}
 
-	actorMesh->SetGenerateOverlapEvents(true);
-
-	mass = 110.0f;
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 }
 
 void ABowlActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
@@ -40,6 +36,9 @@ void ABowlActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 void ABowlActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	mass = 110.0f;
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 
 	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)

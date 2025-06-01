@@ -21,16 +21,17 @@ APlatform4Actor::APlatform4Actor()
 		actorMesh->SetRelativeScale3D(FVector(0.5f, 0.5f, 0.5f));
 	}
 
-	actorMesh->SetSimulatePhysics(true);
-	actorMesh->SetAngularDamping(5.0f);
-
-	mass = 1200.0f; 
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 }
 
 void APlatform4Actor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	actorMesh->SetSimulatePhysics(false);
+	actorMesh->SetAngularDamping(5.0f);
+
+	mass = 1200.0f; 
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 
 	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)

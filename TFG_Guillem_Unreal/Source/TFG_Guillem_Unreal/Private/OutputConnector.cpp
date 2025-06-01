@@ -6,19 +6,25 @@
 #include "InputConnector.h"
 #include "ConnectorUserData.h"
 
+UOutputConnector::UOutputConnector()
+{
+	//Visual mesh for the connector. Can be changed for a better visualization or to adapt the visuals
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> sphereMesh(TEXT("/Game/Media/3DModels/SphereOutput.SphereOutput"));
+
+	if (sphereMesh.Succeeded())
+	{
+		preLoadedMesh = sphereMesh.Object;
+	}
+}
+
 void UOutputConnector::SetConnector(AAttachableActor& attachableActor, FVector relativeAttachPosition, FRotator socketRotation)
 {
 	Super::SetConnector(attachableActor, relativeAttachPosition, socketRotation);
 
 	constraint = NewObject<UPhysicsConstraintComponent>(&attachableActor);
 
-	//Visual mesh for the connector. Can be changed for a better visualization or to adapt the visuals
-	UStaticMesh* sphereMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/SphereOutput.SphereOutput"));
-	if (sphereMesh)
-	{
-		connectorMesh->SetStaticMesh(sphereMesh);
-		connectorMesh->SetRelativeScale3D(FVector(1.0f) / actorOwner->GetActorRelativeScale3D() * connectorSize);
-	}
+	connectorMesh->SetStaticMesh(preLoadedMesh);
+	connectorMesh->SetRelativeScale3D(FVector(1.0f) / actorOwner->GetActorRelativeScale3D() * connectorSize);
 
 }
 

@@ -1,0 +1,955 @@
+{
+	"AssetInfoVersion": 2,
+	"ShaderCodeToAssets": [
+		{
+			"ShaderMapHash": "1493FF02CFD73EA9AB0712F5CF1F90C3C02A3E5E",
+			"Assets": [
+				"/Engine/EngineMaterials/FlattenMaterial_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "38FA2904342B28DCC541AF5DAAB7DADFDD0E66AE",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Sheen_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "5C397F044B79E67E616794816468E0C6E35754EC",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_SpecularGlossiness_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "BB2DBE05A9227AFFCF5F7911686DF4258BBF9C0B",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultDeferredDecalMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "65D436070EA1062810B377ABEBBD1FBF1E366A8D",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Master_Walls",
+				"/Game/ModularHouses/Materials/Roof/M_Roof_A_Grey"
+			]
+		},
+		{
+			"ShaderMapHash": "B987F608DFB6B11C4D0F16116F0C23AC331F6587",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Plant_05"
+			]
+		},
+		{
+			"ShaderMapHash": "0F2A640BBDFADE17AD2B8C4634905E68E280527D",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_WoodenPlanks_B1",
+				"/Game/ModularHouses/Materials/Generic/M_WoodenPlanks_B2",
+				"/Game/ModularHouses/Materials/Generic/M_WoodenPlanks_B3"
+			]
+		},
+		{
+			"ShaderMapHash": "C971AF0D385898A859348E7DA21CD0AA8988CF2A",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Default_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "265A9E0E688C0AD181BBD5F9841DAE8A711CA6CC",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Wall/M_WallPaint_A_Gray"
+			]
+		},
+		{
+			"ShaderMapHash": "3543D20F571BEC552E0CA3CB37EBE366E7044478",
+			"Assets": [
+				"/ControlRig/Controls/ControlRigXRayMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "75C52A139C3434F32C4EB23CE5B0C87DBDD9E0E8",
+			"Assets": [
+				"/Fab/Materials/Standard/M_MS_Base",
+				"/Game/Fab/Megascans/3D/Blue_Crayon_ufgibeijw/Medium/MI_ufgibeijw",
+				"/Game/Fab/Megascans/3D/Colorful_Wooden_Toy_uh1icdcjw/Medium/MI_uh1icdcjw"
+			]
+		},
+		{
+			"ShaderMapHash": "1A3E0415207BCE9F0365B453EB282A01958FA3F1",
+			"Assets": [
+				"/Engine/EditorMaterials/PreviewShadowIndicatorMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "DD4AF41724C91A8974AB58C577705A1CC5EE94DE",
+			"Assets": [
+				"/Game/Fab/CC0_-_Balloon/Balloon"
+			]
+		},
+		{
+			"ShaderMapHash": "73D53B1A079CBFBB9CD4C28F9FD479F480BF6A7E",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Roof/M_Line_A_Blue",
+				"/Game/ModularHouses/Materials/Roof/M_Line_A_Green",
+				"/Game/ModularHouses/Materials/Wall/M_Bricks_Yellow_A",
+				"/Game/ModularHouses/Materials/Wall/M_Planks_White_A1"
+			]
+		},
+		{
+			"ShaderMapHash": "B7AA5B1BBDF568D143E429424B6D6FD74C325F29",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_ClearCoat_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "AA6F921D2B38155B67895699FE1C972BFC27B4C9",
+			"Assets": [
+				"/Game/Fab/MixedVFX/Materials/M_TranslucentUnlitMaster",
+				"/Game/Fab/MixedVFX/Materials/MaterialInstances/MI_Embers"
+			]
+		},
+		{
+			"ShaderMapHash": "B716871F14739E1E5079558721F81F62D2B2A00C",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Hide"
+			]
+		},
+		{
+			"ShaderMapHash": "603AB920AD8CDD21F61B360633D25BA8B1B58955",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Car_01_Glass"
+			]
+		},
+		{
+			"ShaderMapHash": "930107218F918F4EBEE61BFA13C1E224C6BE0FDB",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_RoadPanorama",
+				"/Game/ModularHouses/Materials/Generic/M_RoadPanorama1"
+			]
+		},
+		{
+			"ShaderMapHash": "BB4001243AEC2B89AC0FABD40E635DB811D24865",
+			"Assets": [
+				"/Engine/EditorMaterials/PhAT_NoCollisionMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "CD85522804A919CD82DC293FD9230C27D7C166F4",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_WallPaint_A1_Gray",
+				"/Game/ModularHouses/Materials/Master/M_Master_Generic"
+			]
+		},
+		{
+			"ShaderMapHash": "CB23112AD2FF30AD89A73956DC9DA015444DD2F2",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "E843512BDA75D4C8434FD43508D2136498DDB362",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
+			]
+		},
+		{
+			"ShaderMapHash": "C7D2BF2B1C469081E777B063F5D1EB4A54666935",
+			"Assets": [
+				"/Niagara/DefaultAssets/DefaultSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "A3B4322C1F460649E1D3327741948EE23FF3232C",
+			"Assets": [
+				"/Engine/EditorMaterials/Camera/CineMat"
+			]
+		},
+		{
+			"ShaderMapHash": "07F2F62E2D536AF44F03525A2262B11C4798E385",
+			"Assets": [
+				"/AudioWidgets/AudioMaterialSlate/M_AudioMaterialKnob"
+			]
+		},
+		{
+			"ShaderMapHash": "D4A84C2F7B94E4DADBB015ABC9C5C4F34A519D59",
+			"Assets": [
+				"/Game/Fab/MixedVFX/Materials/M_SimpleDissolver"
+			]
+		},
+		{
+			"ShaderMapHash": "C9EF6D30611DF311EC9F7CF823D4E2D4F62237DB",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_ClearCoat_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "0CA80331C02FB012388B595DD59C7845E5363C65",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/Black_01"
+			]
+		},
+		{
+			"ShaderMapHash": "7FF21F33F0B24B37F057308491E14A02AE5B4C43",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Default_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "BBD04035D25A934CBF61C5DC9BC084642549F906",
+			"Assets": [
+				"/Game/Fab/Toy_Ray_Gun/metal",
+				"/Game/Fab/Toy_Ray_Gun/screws"
+			]
+		},
+		{
+			"ShaderMapHash": "3C959E36D90958037F76A68631E21DF725D2E038",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Foliage_A2"
+			]
+		},
+		{
+			"ShaderMapHash": "26381C3740266B140593AAE0CE6C4B446FAE4242",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Bark_A"
+			]
+		},
+		{
+			"ShaderMapHash": "7BCED138039CD5898013759D2C28693C7BF70484",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Aluminium_A",
+				"/Game/ModularHouses/Materials/Generic/M_Metal_A",
+				"/Game/ModularHouses/Materials/Wall/M_Stucco_White",
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_A1"
+			]
+		},
+		{
+			"ShaderMapHash": "7DB3C63A217EECD88BD671D700A69BF2B8934D1E",
+			"Assets": [
+				"/Engine/EngineMaterials/FlattenMaterial_WS_Normal_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "66A2F13A8C1D09D13CB08930294D3227FC846F58",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultPostProcessMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "F68BDB43EB18AE588F4E6C60EF0D1F178A62884E",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_ClearCoat_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "03D1974758346450E99FC4CEB8AD67C75230F3F9",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "BE507149A9EDA3685963600DCA028290DCFFE4ED",
+			"Assets": [
+				"/Engine/EditorMaterials/PhAT_UnselectedMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "F6CF904A03A8B3A2C94910FB90ED373E0798BD02",
+			"Assets": [
+				"/Engine/EngineMaterials/RemoveSurfaceMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "B3E59E4A29DB360E608E299C198FAD7C16B03EE9",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/Xray"
+			]
+		},
+		{
+			"ShaderMapHash": "58C6A14CD38901D0D30DB94AA1DAF55868A6BF29",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_SpecularGlossiness_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "E4D10B4EE818567A648B16A1E8C90BD90E64E65E",
+			"Assets": [
+				"/AudioWidgets/AudioMaterialSlate/M_AudioMaterialEnvelope_ADSR"
+			]
+		},
+		{
+			"ShaderMapHash": "872F814F28E517F09F2B2ACDDB192A1F0B632391",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultLightFunctionMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "467FA34F4F07F02BEAB185F5473D24ED3DB1A618",
+			"Assets": [
+				"/InterchangeAssets/gltf/M_ClearCoat"
+			]
+		},
+		{
+			"ShaderMapHash": "96C9475382389064B5D2B08509747278544D5311",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Floor/M_Floor_A1",
+				"/Game/ModularHouses/Materials/Floor/M_Floor_C1",
+				"/Game/ModularHouses/Materials/Generic/M_Concrete_A",
+				"/Game/ModularHouses/Materials/Generic/M_Concrete_A1",
+				"/Game/ModularHouses/Materials/Generic/M_Painted_Metal_A",
+				"/Game/ModularHouses/Materials/Generic/M_WoodFloor_Blue",
+				"/Game/ModularHouses/Materials/Wall/M_Stucco_Blue",
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_A2",
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_A4",
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_A5",
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_A6",
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_B"
+			]
+		},
+		{
+			"ShaderMapHash": "7C1E53542E4E07BD2E801F088361C75100768D9C",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque"
+			]
+		},
+		{
+			"ShaderMapHash": "DA099954DF7C60F6BF43F8BC0E831D1C47633CD4",
+			"Assets": [
+				"/HairStrands/Materials/HairCardsDefaultMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "4AF10555BEA6DA1656A95F9B4F37A5D05E01F4D0",
+			"Assets": [
+				"/AudioWidgets/AudioMaterialSlate/M_AudioMaterialMeter"
+			]
+		},
+		{
+			"ShaderMapHash": "638F78550E8B911582CD12D283ACC329774E8597",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Sheen_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "96AB6457D892EC1D2DDE9068A2764003DDB1D1C9",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Plastic_Line_A"
+			]
+		},
+		{
+			"ShaderMapHash": "A7D37C571549C80E73C5890401C8830445E9C454",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_A3",
+				"/Game/ModularHouses/Materials/Wall/M_Wallpaper_B1"
+			]
+		},
+		{
+			"ShaderMapHash": "41DDFC5AD4E20D99E468C74E1341021B9A13A6ED",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Unlit_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "9211F75D7D339ACAF350252A6F1A7357BBCE8B4E",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Floor/M_Floor_A3"
+			]
+		},
+		{
+			"ShaderMapHash": "C7F3085E198FF082A8593D9808320B9560D787E5",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Transmission_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "FDA9CD5FFD0ECFB3963AA9DF308095E86513E979",
+			"Assets": [
+				"/Engine/VREditor/UI/KeyDiskMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "0C5609608F2F1962F78AF473D0CC86A32A0268E7",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Road_A"
+			]
+		},
+		{
+			"ShaderMapHash": "51BCB963F3CDBDC0E12562DFC43FA217872EABDD",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "B1ED19647C4C223D0B38348D5EB50446F267B107",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_ClearCoat_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "4021EC6A522DBB0D88D65F2E883F5C5D89D2527E",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_MailBox"
+			]
+		},
+		{
+			"ShaderMapHash": "D7C4C46CEAE18B3F14267FFF37B0946511B115EA",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Car_02"
+			]
+		},
+		{
+			"ShaderMapHash": "438EC7702432B7C65389A674FAA4D54526331B3A",
+			"Assets": [
+				"/HairStrands/Materials/HairDefaultMaterial",
+				"/HairStrands/Materials/HairMeshesDefaultMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "89BAEA73DBFD4AF02B0BF3F61404D298A35B4B19",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough",
+				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "7A9B1E747642FCB8DCC5D93EED7DC1095EAA983A",
+			"Assets": [
+				"/Engine/EngineMaterials/EmissiveMeshMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "3BB94879F29CFAC1C43988336955590C6AE72AC5",
+			"Assets": [
+				"/Fab/Materials/Standard/M_MS_Srf"
+			]
+		},
+		{
+			"ShaderMapHash": "6A0D847AAB87541EAE415696F1B8E6BF3AB9322B",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Wall/M_Planks_Blue_A1",
+				"/Game/ModularHouses/Materials/Wall/M_Planks_Green",
+				"/Game/ModularHouses/Materials/Wall/M_Planks_White",
+				"/Game/ModularHouses/Materials/Wall/M_Planks_Yellow"
+			]
+		},
+		{
+			"ShaderMapHash": "B5A0DA8173B641640E4A250C54F3D0830D319DBA",
+			"Assets": [
+				"/Engine/BasicShapes/BasicShapeMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "EF737682B94EAE7E253307CBCDC97D21E9183578",
+			"Assets": [
+				"/InterchangeAssets/gltf/M_Unlit"
+			]
+		},
+		{
+			"ShaderMapHash": "60FAA787B149DBAF3B42FFE5BF55CF63912D6B92",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Unlit_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "7ECA128A44CA1CE9EDB0F038C44133989000D8E8",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/M_VolumeRenderSphereTracePP"
+			]
+		},
+		{
+			"ShaderMapHash": "43A1648CD0222A24BA61E9080324398DF94D2781",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Grass_A_Masked"
+			]
+		},
+		{
+			"ShaderMapHash": "8A1F3B9056E0FE00D28C3B6CB56BB6481EE24873",
+			"Assets": [
+				"/Game/Media/Materials/PlasticPlatform"
+			]
+		},
+		{
+			"ShaderMapHash": "C846C6931F2202D05808A0D4F6C79FCCFB2634AB",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Default_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "30F31C9533A4ECDE96D7F1E8870241780BF7C768",
+			"Assets": [
+				"/SpeedTreeImporter/SpeedTree9/SpeedTreeBillboardMaster"
+			]
+		},
+		{
+			"ShaderMapHash": "48D01D9593071EC8703BC2D63B2AC9C62A63904F",
+			"Assets": [
+				"/DeformerGraph/Deformers/DG_LinearBlendSkin_Morph_Cloth_RecomputeNormals"
+			]
+		},
+		{
+			"ShaderMapHash": "DC20DB95564A458441795055F25970E9D978904D",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Unlit_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "F3CE0A9712EAB9AD10304FB158155F8DA0B0E8AD",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Roof/M_Roof_A_Blue",
+				"/Game/ModularHouses/Materials/Roof/M_Roof_B_Blue",
+				"/Game/ModularHouses/Materials/Roof/M_Roof_B_Green",
+				"/Game/ModularHouses/Materials/Roof/M_Roof_D_Blue",
+				"/Game/ModularHouses/Materials/Roof/M_Roof_D_Metallic"
+			]
+		},
+		{
+			"ShaderMapHash": "A5C01097DA1A20A5CA8B5FEC150CAC2CAA06B850",
+			"Assets": [
+				"/Engine/EngineMaterials/FlattenMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "B08ACB97EF558CBD8C2CD8603557759B5621B22A",
+			"Assets": [
+				"/HairStrands/Materials/HairDebugMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "149BEE9A0F16AC3CE7CE830DBB6CE47C3A498919",
+			"Assets": [
+				"/InterchangeAssets/gltf/M_Sheen"
+			]
+		},
+		{
+			"ShaderMapHash": "139F039CA8E5705ED81996B03F2DA5B4D1BF876D",
+			"Assets": [
+				"/DeformerGraph/Deformers/DG_LinearBlendSkin_Morph_Cloth_RecomputeNormals"
+			]
+		},
+		{
+			"ShaderMapHash": "4006BA9EB73D13D315BB3D4DFAE21AB5F3BB8EEE",
+			"Assets": [
+				"/Engine/EditorMaterials/Dataflow/DataflowTwoSidedVertexMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "6257E19E087AFAA1A06ABC4E94D3DE396EBF7AD8",
+			"Assets": [
+				"/Game/Fab/Rubik_s_Cube_solved/black",
+				"/Game/Fab/Rubik_s_Cube_solved/blue",
+				"/Game/Fab/Rubik_s_Cube_solved/green",
+				"/Game/Fab/Rubik_s_Cube_solved/material",
+				"/Game/Fab/Rubik_s_Cube_solved/orange",
+				"/Game/Fab/Rubik_s_Cube_solved/white",
+				"/Game/Fab/Rubik_s_Cube_solved/yellow"
+			]
+		},
+		{
+			"ShaderMapHash": "3BC2F9A055C254288A1470A4BC53AD72BCDF41E0",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Car_01"
+			]
+		},
+		{
+			"ShaderMapHash": "BFAD6BA27287AAFBAB08927A2B900242E5DEE8F0",
+			"Assets": [
+				"/ControlRig/Controls/ControlRigGizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "97D002A3464DFD166EC5EF5F64488C002F672A7F",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Plant_04"
+			]
+		},
+		{
+			"ShaderMapHash": "E725E1A3BDA1B6A027E665CE24C253D76BC60446",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Unlit_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "04D3B4A4083A959CFCDB822964EDC8E0C3012CE1",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Master_Roof_A"
+			]
+		},
+		{
+			"ShaderMapHash": "14FB4CA587107E4DD2FACC283F459309F7E401D6",
+			"Assets": [
+				"/InterchangeAssets/gltf/M_Transmission"
+			]
+		},
+		{
+			"ShaderMapHash": "12139CA52193C4C460AE33D2EE9F0F2D0FE0C14C",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Grass_C2"
+			]
+		},
+		{
+			"ShaderMapHash": "AF095FA6C6A09C1FED38F8F2523A7805044FBE5A",
+			"Assets": [
+				"/DeformerGraph/Deformers/DG_LinearBlendSkin_Morph_Cloth"
+			]
+		},
+		{
+			"ShaderMapHash": "D1D1D3A65B861AF9DFFCAD141F1F395FDEB954E0",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_SpecularGlossiness_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "01CF0BA88B6A106D85E2E07F68FD6A0169B02D33",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/MAT_LevelColorationLitLightmapUV"
+			]
+		},
+		{
+			"ShaderMapHash": "CBC022A8ABA7B0144A973DEE3EEF21A0F81E82C0",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Sheen_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "54D428AA560698494A3F887366418974CE9AD308",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultTextMaterialOpaque"
+			]
+		},
+		{
+			"ShaderMapHash": "DCD95DABF09BBB29B874627ADB0158E2C1E54CD2",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_ClearCoat_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "9415F7AE6FE0D936B7829A6A3D2E31B040D4EAB7",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Pole"
+			]
+		},
+		{
+			"ShaderMapHash": "1B1B4AB06F44A43176D3BF0F9C008FCD84900747",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Master_Glass"
+			]
+		},
+		{
+			"ShaderMapHash": "9CC56FB10901E39B898F78BC07EBF187EBFA26B5",
+			"Assets": [
+				"/InterchangeAssets/gltf/M_Default"
+			]
+		},
+		{
+			"ShaderMapHash": "C293EEB2C0A5317D47C0205047B6FE14780C9600",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/DebugMeshMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "8132FCB393D49F1E4438FE62DDBB3BD163DD0F43",
+			"Assets": [
+				"/Game/Media/Materials/GoalAreaMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "E4B6E2B4C392CDB2143606A9805C2968CCF45C9F",
+			"Assets": [
+				"/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud"
+			]
+		},
+		{
+			"ShaderMapHash": "6C687CB7F0A6B1C006AFCEBB6D10215236B3C1A6",
+			"Assets": [
+				"/Engine/EngineMaterials/WorldGridMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "CB3315B8AE79D1FA8274C894109EC75444761693",
+			"Assets": [
+				"/Engine/EngineMaterials/NaniteHiddenSectionMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "19AF08BB735D63C12774701BC0C2C447B5DA4F7B",
+			"Assets": [
+				"/Engine/EditorLandscapeResources/SplineEditorMeshMat"
+			]
+		},
+		{
+			"ShaderMapHash": "F22AF3BBF610E0A93BD3909DC3575E385FC9E174",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Leaves_01"
+			]
+		},
+		{
+			"ShaderMapHash": "55B8C3BC35ECA2FBC0450CAC7A74979BC44CD407",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Foliage_B"
+			]
+		},
+		{
+			"ShaderMapHash": "540A90BE6FC036924E2E31BBEE2FE6874164A995",
+			"Assets": [
+				"/SpeedTreeImporter/SpeedTree9/SpeedTreeMaster"
+			]
+		},
+		{
+			"ShaderMapHash": "E2573EBF5351131F91A96B52350FF2B2602C229A",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Sheen_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "131870C1C1469146849EAEFB4F3E7C838DA2661F",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_ConcreteFloor_A",
+				"/Game/ModularHouses/Materials/Generic/M_Grass_A",
+				"/Game/ModularHouses/Materials/Generic/M_Grass_A1"
+			]
+		},
+		{
+			"ShaderMapHash": "23DE3EC34369513CEC99DB6EFFB462B80C2E6B91",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/DebugEditorMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "41FCFCC3B14D2D85D02F402E6AB0CB2A3D39050E",
+			"Assets": [
+				"/Engine/EngineMaterials/M_InvalidLightmapSettings"
+			]
+		},
+		{
+			"ShaderMapHash": "D71594C921688AF8AB174E9EDAB0E72C911DEE7D",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/M_SimpleUnlitTranslucent"
+			]
+		},
+		{
+			"ShaderMapHash": "5C766ECA14760A636EDE4A85B97C31257F022DC9",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Default_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "01A12FD184AC3AA5E99A6B8FBCE9F5B37A21FE64",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Wood_A"
+			]
+		},
+		{
+			"ShaderMapHash": "7F0E93D347286D9FE8CF6EE78965ABD3A78AA0B7",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Default_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "CBFB51D59FA356821CA77FD1E7CE15832D00AABB",
+			"Assets": [
+				"/Paper2D/DefaultSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "50FD2AD884ADAB2A48726D2D2A047083E29E79B2",
+			"Assets": [
+				"/Game/Fab/Toy_Rocket_4K_Free_3D_model/Toy_Ship"
+			]
+		},
+		{
+			"ShaderMapHash": "F6DB64D84DB2C5C862490BC3682AA6ED00D0109F",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Masked_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "031C24D9F7CD55BAA3E0C3A90286577A5A935E71",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Roof/M_Roof_A_Yellow"
+			]
+		},
+		{
+			"ShaderMapHash": "4050FADA3BF67A9DB1C35FB055B681F087C2E3AC",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/Black"
+			]
+		},
+		{
+			"ShaderMapHash": "E90987DB3EEECB844AE5A78C626B8EFE14B09AC9",
+			"Assets": [
+				"/Engine/TemplateResources/M_Template_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "70DB51DC1D92164A17939819040E8A9875468B66",
+			"Assets": [
+				"/InterchangeAssets/gltf/M_SpecularGlossiness"
+			]
+		},
+		{
+			"ShaderMapHash": "993781DDAFE836D2F93092DC786523B8F166F8D1",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_SpecularGlossiness_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "9D5317DF00D94BD217F402F6818E16E983D7B451",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_SpecularGlossiness_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "114FE6E0C5BAB390546D68081E82EE02F56A8C12",
+			"Assets": [
+				"/MeshModelingToolset/Materials/M_DynamicMeshComponentVtxColor"
+			]
+		},
+		{
+			"ShaderMapHash": "EF43D4E1DAEA9463701C8E64FA8AF5E210CFDF1E",
+			"Assets": [
+				"/Engine/VREditor/SnapGrid/SnapGridMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "6430E1E20FAF9EFBD49B243146F8171038FFB8A0",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent"
+			]
+		},
+		{
+			"ShaderMapHash": "E684FCE2727E972BADC74B712251493C491A8869",
+			"Assets": [
+				"/Game/Fab/Toy_Ray_Gun/dark_blue",
+				"/Game/Fab/Toy_Ray_Gun/indicator",
+				"/Game/Fab/Toy_Ray_Gun/light_blue",
+				"/Game/Fab/Toy_Ray_Gun/logo_plate",
+				"/Game/Fab/Toy_Ray_Gun/main_body"
+			]
+		},
+		{
+			"ShaderMapHash": "796CA0E36B69D9CA34F1B88272C4BF39F0DEBCF4",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/TransformGizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "7F83BEE30F38F413CDA60CD13D5D5E48439A19B8",
+			"Assets": [
+				"/ControlRig/M_Manip"
+			]
+		},
+		{
+			"ShaderMapHash": "E2B396E5B60A34D0D2DACF339C31C2BC352EB1A9",
+			"Assets": [
+				"/Paper2D/OpaqueUnlitSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "A7CDEFE64E9F9FCE768B8A23451AE5E9D897AD06",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Unlit_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "9DC07DE97A24903521FD52874787404ACCB383D5",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Master_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "1AB0E1E9B8F54A296490D1DFEB9E2912C4EA1FF1",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Roof/M_Roof_Line_A"
+			]
+		},
+		{
+			"ShaderMapHash": "8A9043EBE2A8C89D45D25A84812226A5E7AE32A7",
+			"Assets": [
+				"/InterchangeAssets/gltf/MaterialInstances/MI_Sheen_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "E05C73EB3596E1F964FF6E135B0EBA06005357D0",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Painted_Metal_A_Blue",
+				"/Game/ModularHouses/Materials/Wall/M_Bricks_Painted_Blue",
+				"/Game/ModularHouses/Materials/Wall/M_Bricks_Painted_White",
+				"/Game/ModularHouses/Materials/Wall/M_Bricks_Yellow_A1",
+				"/Game/ModularHouses/Materials/Wall/M_Planks_DGreen",
+				"/Game/ModularHouses/Materials/Wall/M_Siding_A_Blue",
+				"/Game/ModularHouses/Materials/Wall/M_Siding_A_Green",
+				"/Game/ModularHouses/Materials/Wall/M_Siding_A_Yellow"
+			]
+		},
+		{
+			"ShaderMapHash": "6AC485ECEE84AE038FBD2C924E8128086C968D90",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_Plant_06"
+			]
+		},
+		{
+			"ShaderMapHash": "326AFFF1B14AF96A614C4C9FE33170408F7F2BD4",
+			"Assets": [
+				"/Engine/EngineMaterials/PPM_DefaultCalibrationColor"
+			]
+		},
+		{
+			"ShaderMapHash": "4C4803F2B92304861171BFA7D83BBF99845A522F",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_SideWalk_A"
+			]
+		},
+		{
+			"ShaderMapHash": "9115BDF28D02487A85BF3B1B7CB0DC8103F2905D",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Generic/M_TrashCan"
+			]
+		},
+		{
+			"ShaderMapHash": "A81E03F6B3B7989786362B67AEB359BBCD995FBD",
+			"Assets": [
+				"/AudioWidgets/AudioMaterialSlate/M_AudioMaterialToggleButton"
+			]
+		},
+		{
+			"ShaderMapHash": "CD389CF7FB2BB48C45DE9F2A6EDD9C90F3429DAF",
+			"Assets": [
+				"/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale"
+			]
+		},
+		{
+			"ShaderMapHash": "C9EC23F80E8133EC2376A04489462C7F2F7CF2E2",
+			"Assets": [
+				"/Engine/EngineMaterials/GizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "0FF550F9E7376EDD60059AC29332F8BC39F8E22A",
+			"Assets": [
+				"/Game/ModularHouses/Materials/Master/M_Foliage_A"
+			]
+		},
+		{
+			"ShaderMapHash": "2EDD26FBF47B3D2A840F3F774EBB87A78953A160",
+			"Assets": [
+				"/AudioWidgets/AudioMaterialSlate/M_AudioMaterialRoundedSlider"
+			]
+		},
+		{
+			"ShaderMapHash": "E5C368FC768CED1BEC95B190166B35145EB6DD93",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/Main",
+				"/Engine/VREditor/UI/KeyMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "3162FCFD67A017CA057A026716EAF7D5C71FC5DD",
+			"Assets": [
+				"/Engine/EngineMaterials/PhAT_JointLimitMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "AD3588FE222E2A44D0B811B60204866F556B8AD3",
+			"Assets": [
+				"/Engine/EditorMaterials/Dataflow/DataflowVertexMaterial"
+			]
+		}
+	]
+}

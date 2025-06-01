@@ -24,24 +24,17 @@ ASpringActor::ASpringActor()
 	if (SpringMeshAsset.Succeeded())
 	{
 		actorMesh->SetStaticMesh(SpringMeshAsset.Object);
-		actorMesh->SetSimulatePhysics(true);
 		actorMesh->SetRelativeScale3D(restScale); //Starting with the scale on rest
 	}
 	if (SpringBaseMeshAsset.Succeeded())
 	{
 		baseMesh->SetStaticMesh(SpringBaseMeshAsset.Object);
-		baseMesh->SetSimulatePhysics(true);
 	}
 	if (HandleMeshAsset.Succeeded())
 	{
 		handleMesh->SetStaticMesh(HandleMeshAsset.Object);
-		handleMesh->SetSimulatePhysics(true);
 	}
 
-	mass = 30.0f;
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
-	baseMesh->SetMassOverrideInKg(NAME_None, mass);
-	handleMesh->SetMassOverrideInKg(NAME_None, mass);
 
 }
 
@@ -107,6 +100,14 @@ void ASpringActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 void ASpringActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	actorMesh->SetSimulatePhysics(true);
+	baseMesh->SetSimulatePhysics(true);
+	handleMesh->SetSimulatePhysics(true);
+	mass = 30.0f;
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
+	baseMesh->SetMassOverrideInKg(NAME_None, mass);
+	handleMesh->SetMassOverrideInKg(NAME_None, mass);
 
 	SetSpringConstraints();
 

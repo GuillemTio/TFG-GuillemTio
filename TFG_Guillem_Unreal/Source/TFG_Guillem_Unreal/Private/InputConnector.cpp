@@ -8,17 +8,25 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Engine/OverlapResult.h"
 
+UInputConnector::UInputConnector()
+{
+
+	//Visual mesh for the connector. Can be changed for a better visualization or to adapt the visuals
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> sphereMesh(TEXT("/Game/Media/3DModels/SphereInput.SphereInput"));
+
+	if (sphereMesh.Succeeded())
+	{
+		preLoadedMesh = sphereMesh.Object;
+	}
+}
+
 void UInputConnector::SetConnector(AAttachableActor& attachableActor, FVector relativeAttachPosition, FRotator socketRotation)
 {
 
 	Super::SetConnector(attachableActor, relativeAttachPosition, socketRotation);
 
-	UStaticMesh* sphereMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/SphereInput.SphereInput"));
-	if (sphereMesh)
-	{
-		connectorMesh->SetStaticMesh(sphereMesh);
-		connectorMesh->SetRelativeScale3D(FVector(1.0f) / actorOwner->GetActorScale3D() * connectorSize);
-	}
+	connectorMesh->SetStaticMesh(preLoadedMesh);
+	connectorMesh->SetRelativeScale3D(FVector(1.0f) / actorOwner->GetActorScale3D() * connectorSize);
 
 }
 

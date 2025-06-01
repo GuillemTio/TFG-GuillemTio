@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealgame\\inc\\tfg_guillem_unreal\\uht\\crossactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\tfg_guillem_unreal\\development\\engine\\sharedpch.engine.project.valapi.cpplatest.h.pch",
+        "Includes": [
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\x64\\unrealgame\\development\\tfg_guillem_unreal\\definitions.tfg_guillem_unreal.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\crossactor.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\nonactivableactor.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\source\\tfg_guillem_unreal\\public\\attachableactor.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\physicsengine\\physicsconstraintcomponent.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\physicsengine\\constraintinstance.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\physicsengine\\constraintdrives.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\constraintdrives.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\constraintinstance.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\physicsconstraintcomponent.generated.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealgame\\inc\\tfg_guillem_unreal\\uht\\attachableactor.generated.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealgame\\inc\\tfg_guillem_unreal\\uht\\nonactivableactor.generated.h",
+            "c:\\users\\guillem\\desktop\\uni\\treball de fi de grau\\tfg-guillemtio\\tfg-guillemtio\\tfg_guillem_unreal\\intermediate\\build\\win64\\unrealgame\\inc\\tfg_guillem_unreal\\uht\\crossactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

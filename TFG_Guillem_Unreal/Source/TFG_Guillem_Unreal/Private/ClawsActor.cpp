@@ -24,25 +24,18 @@ AClawsActor::AClawsActor()
 	if (ClawBaseMeshAsset.Succeeded())
 	{
 		actorMesh->SetStaticMesh(ClawBaseMeshAsset.Object);
-		actorMesh->SetSimulatePhysics(true);
 	}
 	if (Claw1MeshAsset.Succeeded())
 	{
 		clawMesh1->SetStaticMesh(Claw1MeshAsset.Object);
-		clawMesh1->SetSimulatePhysics(true);
 		clawMesh1->SetRelativeLocation(FVector(-70.0, 0.0, 0.0));
 	}
 	if (Claw2MeshAsset.Succeeded())
 	{
 		clawMesh2->SetStaticMesh(Claw2MeshAsset.Object);
-		clawMesh2->SetSimulatePhysics(true);
 		clawMesh2->SetRelativeLocation(FVector(70.0, 0.0, 0.0));
 	}
 
-	mass = 20.0f;
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
-	clawMesh1->SetMassOverrideInKg(NAME_None, mass);
-	clawMesh2->SetMassOverrideInKg(NAME_None, mass);
 }
 
 void AClawsActor::Tick(float DeltaTime)
@@ -82,6 +75,14 @@ void AClawsActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 void AClawsActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+		actorMesh->SetSimulatePhysics(true);
+		clawMesh1->SetSimulatePhysics(true);
+		clawMesh2->SetSimulatePhysics(true);
+	mass = 20.0f;
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
+	clawMesh1->SetMassOverrideInKg(NAME_None, mass);
+	clawMesh2->SetMassOverrideInKg(NAME_None, mass);
 
 	SetClawsConstraints(); //Sets the constraints between the claws and the base mesh
 

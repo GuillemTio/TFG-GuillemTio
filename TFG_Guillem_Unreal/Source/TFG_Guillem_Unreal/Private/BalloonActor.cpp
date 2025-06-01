@@ -15,11 +15,8 @@ ABalloonActor::ABalloonActor()
 	{
 		actorMesh->SetStaticMesh(BalloonMeshAsset.Object);
 		actorMesh->SetRelativeScale3D(uninflatedScale);
-		actorMesh->SetSimulatePhysics(true);
 	}
 
-	mass = 50.0f;
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 
 }
 
@@ -66,6 +63,10 @@ void ABalloonActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 void ABalloonActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	actorMesh->SetSimulatePhysics(true);
+	mass = 50.0f;
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 
 	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)

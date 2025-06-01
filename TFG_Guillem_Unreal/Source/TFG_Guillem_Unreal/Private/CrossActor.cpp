@@ -16,12 +16,9 @@ ACrossActor::ACrossActor()
 	if (CrossMeshAsset.Succeeded())
 	{
 		actorMesh->SetStaticMesh(CrossMeshAsset.Object);
-		actorMesh->SetSimulatePhysics(true);
 	}
 
 
-	mass = 90.0f;
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 }
 
 void ACrossActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
@@ -38,6 +35,10 @@ void ACrossActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint)
 void ACrossActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	actorMesh->SetSimulatePhysics(true);
+	mass = 90.0f;
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 
 	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)

@@ -16,15 +16,16 @@ AWheelActor::AWheelActor()
 		actorMesh->SetStaticMesh(WheelMeshAsset.Object);
 	}
 
-	actorMesh->SetSimulatePhysics(true);
-
-	mass = 150.0f;
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 }
 
 void AWheelActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	actorMesh->SetSimulatePhysics(true);
+
+	mass = 150.0f;
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 
 	//Setting all connectors depending on the sockets attached to the mesh
 	for (const UStaticMeshSocket* Socket : actorMesh->GetStaticMesh()->Sockets)

@@ -15,6 +15,8 @@ class TFG_GUILLEM_UNREAL_API UInputConnector : public UConnector
 	GENERATED_BODY()
 	
 public:
+	UInputConnector();
+
 	virtual void SetConnector(AAttachableActor& attachableActor, FVector relativeAttachPosition, FRotator socketRotation) override;
 	void SetConnectedTo(UConnector* connector);
 

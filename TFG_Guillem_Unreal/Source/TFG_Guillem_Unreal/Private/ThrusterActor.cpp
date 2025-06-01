@@ -15,7 +15,6 @@ AThrusterActor::AThrusterActor()
 	{
 		actorMesh->SetStaticMesh(RocketMeshAsset.Object);
 		actorMesh->SetRelativeScale3D(FVector(0.3f, 0.3f, 0.3f));
-		actorMesh->SetSimulatePhysics(true);
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, "Mesh not correctly set");
 
@@ -32,8 +31,6 @@ AThrusterActor::AThrusterActor()
 		thrusterFX->SetAsset(ThrusterParticles.Object);
 	}
 
-	mass = 10.0f;
-	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 	
 }
 
@@ -70,6 +67,10 @@ void AThrusterActor::SetConstraintLimits(UPhysicsConstraintComponent& constraint
 void AThrusterActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	actorMesh->SetSimulatePhysics(true);
+	mass = 10.0f;
+	actorMesh->SetMassOverrideInKg(NAME_None, mass);
 
 	AddInstanceComponent(thrusterFX);
 
